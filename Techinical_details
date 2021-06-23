@@ -1,0 +1,7 @@
+Database:
+Install the POSTGRESQl with docker container 
+docker run --name postgresql-container -p 5432:5432 -e POSTGRES_PASSWORD=somePassword -d postgres
+The above statement will install postgres and will run the system at port 5432
+Install the PGADMIN 4 tools for the POSTGRES community for accessing the database
+docker run --rm -p 5050:5050 thajeztah/pgadmin4
+After this manage the PGADMIN 4 from http://localhost:5050 in the browser
